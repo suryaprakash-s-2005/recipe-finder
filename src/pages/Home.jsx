@@ -17,7 +17,7 @@ function Home() {
       try {
         const uniqueIds = new Set();
         const popularRecipes = [];
-        while (uniqueIds.size < 7) {
+        while (uniqueIds.size < 12) {
           const response = await fetch("https://www.themealdb.com/api/json/v1/1/random.php");
           const data = await response.json();
           if (data.meals) {
