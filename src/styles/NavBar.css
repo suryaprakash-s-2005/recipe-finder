@@ -1,0 +1,133 @@
+.navbar {
+  background-color: #1b1b1b;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 1000;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-brand a {
+  color: #2196f3;
+  text-decoration: none;
+}
+
+.navbar-brand a:hover {
+  color: #1976d2;
+  text-decoration: none;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-link {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.nav-link:hover {
+  background-color: rgba(33, 150, 243, 0.2);
+  color: #1976d2;
+  text-decoration: none;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #ffffff;
+  padding: 0.5rem;
+  background: none;
+  border: none;
+  z-index: 1001;
+}
+
+.navbar-links.open {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  right: 2rem;
+  background-color: #121212;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  padding: 1rem 0;
+  gap: 0.5rem;
+  z-index: 1000;
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0.75rem 1rem;
+  }
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+  .navbar-links {
+    display: none;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  .navbar-links.open {
+    display: flex;
+  }
+}
+
+@media (max-width: 320px) {
+  .navbar {
+    padding: 0.5rem 0.75rem;
+  }
+  .navbar-brand {
+    font-size: 1rem;
+  }
+  .menu-toggle {
+    font-size: 1.2rem;
+    padding: 0.25rem;
+  }
+  .navbar-links.open {
+    right: 1rem;
+    padding: 0.5rem 0;
+  }
+  .nav-link {
+    padding: 0.3rem 0.75rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .navbar {
+    padding: 1rem 1.5rem;
+  }
+  .navbar-links {
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .navbar {
+    padding: 1.5rem 3rem;
+  }
+  .navbar-brand {
+    font-size: 1.8rem;
+  }
+  .navbar-links {
+    gap: 2.5rem;
+  }
+  .nav-link {
+    font-size: 1.1rem;
+  }
+}
