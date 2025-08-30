@@ -1,6 +1,6 @@
 import { useFavorites } from "../hooks/useFavorites.js";
 import RecipeCard from "../components/RecipeCard.jsx";
-import "../styles/Favorites.css";
+import "../styles/Favorites.css" ;
 
 function Favorites() {
   const { favorites } = useFavorites();
