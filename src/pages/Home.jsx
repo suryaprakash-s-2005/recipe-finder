@@ -32,7 +32,7 @@ function Home() {
         setError(null);
       } catch (err) {
         console.error(err);
-        setError("Failed to load popular recipes...");
+        setError("Failed to load popular recipes 🥲...");
       } finally {
         setLoading(false);
       }
@@ -75,7 +75,7 @@ function Home() {
             </div>
           ) : (
             <div className="no-recipes-message">
-              <p>No recipes found 🥲. Try a different search 🙂!</p>
+              <p>No recipes found 🥲. Try a different search !</p>
             </div>
           )}
         </div>
